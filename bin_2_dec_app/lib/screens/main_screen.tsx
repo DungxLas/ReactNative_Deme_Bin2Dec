@@ -1,3 +1,4 @@
+import React from 'react';
 import {StatusBar, ScrollView, View, Text} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
