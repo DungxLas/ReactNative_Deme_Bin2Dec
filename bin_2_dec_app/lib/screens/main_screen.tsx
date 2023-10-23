@@ -1,28 +1,25 @@
 import React from 'react';
-import {StatusBar, ScrollView, View, Text} from 'react-native';
+import {StatusBar, ScrollView, View, Text, StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {backgroundStyle, isDarkMode} from '../constants/color';
+import InputBin2Dec from '../components/input';
 
 const MainScreen = () => {
   return (
-    <>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Text>shjhfdjifj</Text>
-        </View>
-      </ScrollView>
-    </>
+    <View style={styles.container}>
+      <InputBin2Dec />
+    </View>
   );
 };
 
 export default MainScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    //backgroundColor: 'red',
+  },
+});

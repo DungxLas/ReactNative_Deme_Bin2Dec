@@ -5,11 +5,7 @@ import {backgroundStyle} from './constants/color';
 import MainScreen from './screens/main_screen';
 
 function App(): JSX.Element {
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <MainScreen />
-    </SafeAreaView>
-  );
+  return <MainScreen />;
 }
 
 export default App;
